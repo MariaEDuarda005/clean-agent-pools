@@ -1,0 +1,21 @@
+trigger:
+  - dev
+
+pr:
+  branches:
+    include:
+      - dev
+
+schedules:
+  - cron: "0 19 * * 5"
+    displayName: Weekly Friday Run at 16:00 BRT
+    branches:
+      include:
+        - dev 
+    always: true
+
+pool:
+  vmImage: ubuntu-22.04
+
+variables:
+  - template: templates/variables.yml

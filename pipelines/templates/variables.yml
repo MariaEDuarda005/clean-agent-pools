@@ -1,0 +1,11 @@
+variables:
+  # Habilita logs detalhados
+  - name: system.debug
+    value: true
+
+  # Nome do agent pool self-hosted
+  - name: agent-pool
+    value: 'Azure Pipelines'
+  
+  - name: agent-pool-name
+    value: 'Azure Pipelines 2'
